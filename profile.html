@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link href="styles.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li class="crumb"><a href="./home.html">Home</a></li>
+                <li class="crumb"><a href="./profile.html">Profile</a></li>
+                <li class="crumb"><a href="./about.html">About</a></li>
+            </ol>
+        </nav>
+<header>
+    <h1>Derek's Profile Page</h1>
+</header>
+
+<section>
+    <div>
+        <h2>A little bit about me<h2>
+            <p>My name is Derek. I'm an introvert. I'm trying to 
+                learn how to code and become a data analyst. I like
+                to lift weights.
+            </p>
+    </div>
+        <div>
+            <h3>My Hobbies</h3>
+             <ul>
+                <li>lifting weights</li>
+                <li>reading books</li>
+                <li>talking with family</li>
+             </ul>
+        </div>
+        <div>
+            <h3>My Accomplishments</h3>
+             <ol>
+                <li>Earned my Eagle Scout</li>
+                <li>Graduated from college with a bachelor's degree</li>
+                <li>Was able to eat a whole pizza by myself</li>
+             </ol>
+        </div>
+        <div>
+            <h2>Contact me</h2>
+            <form id = "contact">
+                Your name:
+                <input type = "text">
+
+                message:
+                <input type = "textarea">
+
+                <input type = "submit">
+
+            </form>
+        </div>
+       
+       <div>
+        <button id="color" class="large-yellow-btn">My Favorite Color</button>
+        <button id="place" class="large-yellow-btn">My Favorite Place</button>
+        <button id="ritual" class="large-yellow-btn">My Favorite Ritual</button>
+       </div>
+
+       <script>
+        
+        const button1 = document.querySelector('#color');
+        const button2 = document.querySelector('#place');
+        const button3 = document.querySelector('#ritual');
+        
+        const alertFavColor = () => {
+            alert("My favorite color is blue");
+        };
+        const alertFavPlace = () => {
+            alert("My favorite place is Mexico");
+        };
+        const alertFavRitual = () => {
+            alert("My favorite ritual is working out");
+        };
+        
+        button1.addEventListener('click', alertFavColor);
+        
+        button2.addEventListener('click', alertFavPlace);
+         
+        button3.addEventlistener('click', alertFavRitual);
+        
+        </script>
+</section>
+
+
+<br>
+<br>
+
+<a href="./home.html"><< Back </a>
+</html>
